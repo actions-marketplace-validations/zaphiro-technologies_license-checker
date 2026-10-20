@@ -1,0 +1,38 @@
+# see https://github.com/marketplace/actions/license-eye-header#configurations
+
+header:
+  # This repository's published license, also used as the compatibility target.
+  license:
+    spdx-id: Apache-2.0
+    copyright-year: 2026
+    copyright-owner: Zaphiro Technologies
+
+  paths-ignore:
+    - ".github"
+    - ".docker"
+    - "**/*.{md,MD}"
+    - "examples/javascript/package-lock.json"
+    - "examples/python-requirements/requirements.txt"
+    - "package.json"
+    - "LICENSE"
+    - ".vscode"
+    - "yarn.lock"
+    - "sonar-project.properties"
+
+  comment: on-failure
+
+# If you don't want to check dependencies' license compatibility, remove the following part
+dependency:
+  distribution: open-source-redistribution
+  project-license: header
+  files:
+    - package.json
+    - yarn.lock
+  exceptions:
+    - name: spdx-exceptions
+      version: "2.5.0"
+      url: https://creativecommons.org/licenses/by/3.0/
+      reason: >-
+        Approved for the SPDX exception identifier data consumed by
+        spdx-expression-parse; see THIRD_PARTY_NOTICES.md for the CC BY 3.0
+        attribution and license notice included with the action.
