@@ -1,4 +1,4 @@
-# License Checker GitHub Action
+# Dependency License Compatibility GitHub Action
 
 A GitHub Action for checking dependency license compatibility in JavaScript,
 Python, and Go projects.
@@ -15,7 +15,8 @@ permissions:
   pull-requests: write
 
 steps:
-  - uses: actions/checkout@v4
+  - uses: actions/checkout@v7
+  # npm and PyPI license metadata is cached automatically by the action.
   - uses: zaphiro-technologies/license-checker@v1
     with:
       config: .licenserc.yaml
@@ -28,13 +29,20 @@ source-file headers. It writes a job summary and workflow annotations. When a
 pull request has a failure or distribution-review warning and a token is
 available, it creates or updates one managed pull-request comment.
 
+On GitHub Actions, the action caches successfully resolved npm and PyPI package
+license metadata across runs. Cache entries are keyed from the configured
+dependency files and cached metadata. The current license policy is evaluated on
+every run; GitHub repository metadata and license text are not cached.
+
 ## Configuration
 
 The default config path is `.licenserc.yaml`. Example:
 
 ```yaml
 header:
-  # Used for dependency checks when project-license is `header`.
+  # Used for dependency checks when project-license is `header`. To be used
+  # in combination with apache/skywalking-eyes/header action to update licese
+  # in file headers
   license:
     spdx-id: Apache-2.0
 

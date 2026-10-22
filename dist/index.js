@@ -32772,10 +32772,52 @@ module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("net");
 
 /***/ }),
 
+/***/ 4589:
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:assert");
+
+/***/ }),
+
+/***/ 6698:
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:async_hooks");
+
+/***/ }),
+
+/***/ 4573:
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:buffer");
+
+/***/ }),
+
+/***/ 7540:
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:console");
+
+/***/ }),
+
 /***/ 7598:
 /***/ ((module) => {
 
 module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:crypto");
+
+/***/ }),
+
+/***/ 3053:
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:diagnostics_channel");
+
+/***/ }),
+
+/***/ 610:
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:dns");
 
 /***/ }),
 
@@ -32793,10 +32835,66 @@ module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:fs");
 
 /***/ }),
 
+/***/ 7067:
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:http");
+
+/***/ }),
+
+/***/ 2467:
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:http2");
+
+/***/ }),
+
+/***/ 4708:
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:https");
+
+/***/ }),
+
+/***/ 7030:
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:net");
+
+/***/ }),
+
+/***/ 8161:
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:os");
+
+/***/ }),
+
 /***/ 6760:
 /***/ ((module) => {
 
 module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:path");
+
+/***/ }),
+
+/***/ 643:
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:perf_hooks");
+
+/***/ }),
+
+/***/ 1708:
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:process");
+
+/***/ }),
+
+/***/ 1792:
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:querystring");
 
 /***/ }),
 
@@ -32807,10 +32905,45 @@ module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:stream"
 
 /***/ }),
 
+/***/ 1692:
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:tls");
+
+/***/ }),
+
+/***/ 3136:
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:url");
+
+/***/ }),
+
 /***/ 7975:
 /***/ ((module) => {
 
 module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:util");
+
+/***/ }),
+
+/***/ 3429:
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:util/types");
+
+/***/ }),
+
+/***/ 5919:
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:worker_threads");
+
+/***/ }),
+
+/***/ 8522:
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:zlib");
 
 /***/ }),
 
@@ -32881,6 +33014,13 @@ module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("timers");
 /***/ ((module) => {
 
 module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("tls");
+
+/***/ }),
+
+/***/ 2018:
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("tty");
 
 /***/ }),
 
@@ -43096,292 +43236,18 @@ exports.visitAsync = visitAsync;
 
 /***/ }),
 
-/***/ 9651:
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
-
-/* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
-/* harmony export */   $: () => (/* binding */ headerRules),
-/* harmony export */   Z: () => (/* binding */ loadConfig)
-/* harmony export */ });
-/* harmony import */ var node_fs__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(3024);
-/* harmony import */ var node_path__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(6760);
-/* harmony import */ var yaml__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(918);
-/*
- * Copyright 2026 Zaphiro Technologies
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-
-
-function asRecord(value) {
-    return value && typeof value === "object" && !Array.isArray(value)
-        ? value
-        : {};
-}
-function flattenHeader(entry) {
-    if (Array.isArray(entry))
-        return entry;
-    return entry ? [entry] : [];
-}
-function normalizeHeader(value) {
-    if (Array.isArray(value)) {
-        return value.map((entry) => normalizeHeader(entry)).flatMap(flattenHeader);
-    }
-    if (!value || typeof value !== "object")
-        return undefined;
-    const record = asRecord(value);
-    const license = asRecord(record.license);
-    return {
-        path: typeof record.path === "string" ? record.path : undefined,
-        license: {
-            "spdx-id": typeof license["spdx-id"] === "string" ? license["spdx-id"] : undefined,
-            "copyright-owner": typeof license["copyright-owner"] === "string"
-                ? license["copyright-owner"]
-                : undefined,
-            "copyright-year": typeof license["copyright-year"] === "string" ||
-                typeof license["copyright-year"] === "number"
-                ? license["copyright-year"]
-                : undefined,
-            "software-name": typeof license["software-name"] === "string"
-                ? license["software-name"]
-                : undefined,
-            content: typeof license.content === "string" ? license.content : undefined,
-            pattern: typeof license.pattern === "string" ? license.pattern : undefined,
-        },
-        paths: Array.isArray(record.paths)
-            ? record.paths.filter((item) => typeof item === "string")
-            : undefined,
-        "paths-ignore": Array.isArray(record["paths-ignore"])
-            ? record["paths-ignore"].filter((item) => typeof item === "string")
-            : undefined,
-        comment: record.comment === "always" ||
-            record.comment === "never" ||
-            record.comment === "on-failure"
-            ? record.comment
-            : undefined,
-        "license-location-threshold": typeof record["license-location-threshold"] === "number"
-            ? record["license-location-threshold"]
-            : undefined,
-        language: asRecord(record.language),
-    };
-}
-function normalizeExceptions(value) {
-    if (value !== undefined && !Array.isArray(value)) {
-        throw new Error("dependency.exceptions must be a list.");
-    }
-    return Array.isArray(value)
-        ? value.map((item, index) => {
-            const entry = asRecord(item);
-            const name = typeof entry.name === "string" ? entry.name.trim() : "";
-            const version = typeof entry.version === "string" ? entry.version.trim() : "";
-            const url = typeof entry.url === "string" ? entry.url.trim() : "";
-            const reason = typeof entry.reason === "string" ? entry.reason.trim() : "";
-            if (!name || !version || !url || !reason) {
-                throw new Error(`dependency.exceptions[${index}] requires name, version, url, and reason.`);
-            }
-            try {
-                const parsedUrl = new URL(url);
-                if (parsedUrl.protocol !== "https:" &&
-                    parsedUrl.protocol !== "http:") {
-                    throw new Error("unsupported protocol");
-                }
-            }
-            catch {
-                throw new Error(`dependency.exceptions[${index}].url must be an HTTP(S) URL.`);
-            }
-            return { name, version, url, reason };
-        })
-        : [];
-}
-function normalizeLicenseOverrides(value) {
-    if (!Array.isArray(value))
-        return [];
-    return value.flatMap((item, index) => {
-        const entry = asRecord(item);
-        if (typeof entry.name !== "string" || typeof entry.license !== "string")
-            return [];
-        const match = typeof entry.match === "string" ? entry.match : undefined;
-        if (match !== undefined) {
-            try {
-                new RegExp(match);
-            }
-            catch {
-                throw new Error(`dependency.licenses[${index}].match must be a valid regular expression.`);
-            }
-        }
-        return [
-            {
-                name: entry.name,
-                version: typeof entry.version === "string" ? entry.version : undefined,
-                ...(match !== undefined ? { match } : {}),
-                license: entry.license,
-            },
-        ];
-    });
-}
-function normalizeLicenseRules(value) {
-    if (value === undefined)
-        return undefined;
-    if (!Array.isArray(value)) {
-        throw new TypeError("dependency.license-rules must be a list.");
-    }
-    return value.map((item, index) => {
-        const entry = asRecord(item);
-        if (typeof entry.source !== "string" ||
-            !["license-text", "python-classifier"].includes(entry.source) ||
-            typeof entry.match !== "string" ||
-            typeof entry.license !== "string") {
-            throw new Error(`dependency.license-rules[${index}] requires a supported source, match, and license.`);
-        }
-        try {
-            new RegExp(entry.match, "is");
-        }
-        catch {
-            throw new Error(`dependency.license-rules[${index}].match must be a valid regular expression.`);
-        }
-        return {
-            source: entry.source,
-            match: entry.match,
-            license: entry.license,
-        };
-    });
-}
-function normalizeExcludes(value) {
-    if (!Array.isArray(value))
-        return [];
-    return value.flatMap((item) => {
-        const entry = asRecord(item);
-        if (typeof entry.name !== "string")
-            return [];
-        return [
-            {
-                name: entry.name,
-                version: typeof entry.version === "string" ? entry.version : undefined,
-                recursive: entry.recursive === true,
-            },
-        ];
-    });
-}
-function normalizeGoConfig(value) {
-    if (value === undefined)
-        return undefined;
-    if (!value || typeof value !== "object" || Array.isArray(value)) {
-        throw new Error("dependency.go must be a mapping.");
-    }
-    const go = asRecord(value);
-    if (go.packages !== undefined && !Array.isArray(go.packages)) {
-        throw new Error("dependency.go.packages must be a list.");
-    }
-    if (Array.isArray(go.packages) &&
-        go.packages.some((item) => typeof item !== "string" || !item.trim())) {
-        throw new Error("dependency.go.packages must contain non-empty strings.");
-    }
-    if (go["test-packages"] !== undefined) {
-        throw new Error("dependency.go.test-packages is not supported; use dependency.include-dev-dependencies.");
-    }
-    return {
-        packages: Array.isArray(go.packages)
-            ? go.packages
-            : undefined,
-    };
-}
-function normalizeDependencies(value) {
-    if (!value || typeof value !== "object")
-        return undefined;
-    const record = asRecord(value);
-    const exceptions = normalizeExceptions(record.exceptions);
-    const go = normalizeGoConfig(record.go);
-    if (record["include-dev-dependencies"] !== undefined &&
-        typeof record["include-dev-dependencies"] !== "boolean") {
-        throw new Error("dependency.include-dev-dependencies must be a boolean.");
-    }
-    if (record["project-license"] !== undefined &&
-        (typeof record["project-license"] !== "string" ||
-            !["header", "proprietary"].includes(record["project-license"]))) {
-        throw new Error("dependency.project-license must be either header or proprietary.");
-    }
-    const distributionModels = [
-        "internal-use",
-        "proprietary-binary",
-        "public-saas",
-        "open-source-redistribution",
-        "static-linking",
-        "dynamic-linking",
-    ];
-    if (record.distribution !== undefined &&
-        (typeof record.distribution !== "string" ||
-            !distributionModels.includes(record.distribution))) {
-        throw new Error(`dependency.distribution must be one of: ${distributionModels.join(", ")}.`);
-    }
-    return {
-        files: Array.isArray(record.files)
-            ? record.files.filter((item) => typeof item === "string")
-            : [],
-        go,
-        distribution: record.distribution,
-        includeDevDependencies: record["include-dev-dependencies"] === true,
-        projectLicense: record["project-license"] === "proprietary" ? "proprietary" : "header",
-        licenses: normalizeLicenseOverrides(record.licenses),
-        licenseRules: normalizeLicenseRules(record["license-rules"]),
-        threshold: typeof record.threshold === "number" ? record.threshold : undefined,
-        excludes: normalizeExcludes(record.excludes),
-        exceptions,
-        require_fsf_free: record.require_fsf_free === true,
-        require_osi_approved: record.require_osi_approved === true,
-    };
-}
-function loadConfig(root, configPath) {
-    const absolutePath = (0,node_path__WEBPACK_IMPORTED_MODULE_1__.resolve)(root, configPath);
-    if (!(0,node_fs__WEBPACK_IMPORTED_MODULE_0__.existsSync)(absolutePath))
-        throw new Error(`Configuration file not found: ${configPath}`);
-    const source = (0,node_fs__WEBPACK_IMPORTED_MODULE_0__.readFileSync)(absolutePath, "utf8");
-    const parsed = asRecord((0,yaml__WEBPACK_IMPORTED_MODULE_2__/* .parse */ .qg)(source));
-    const config = {
-        header: normalizeHeader(parsed.header),
-        dependency: normalizeDependencies(parsed.dependency),
-    };
-    if (!config.header && !config.dependency) {
-        throw new Error(`Configuration contains neither a header nor dependency section: ${configPath}`);
-    }
-    return { config, path: absolutePath };
-}
-function headerRules(config) {
-    if (!config.header)
-        return [];
-    return Array.isArray(config.header) ? config.header : [config.header];
-}
-//# sourceMappingURL=config.js.map
-
-/***/ }),
-
-/***/ 3590:
+/***/ 6270:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
 
 
 // EXPORTS
 __nccwpck_require__.d(__webpack_exports__, {
-  q: () => (/* reexport */ checkDependencies)
+  VR: () => (/* binding */ Minimatch),
+  xF: () => (/* binding */ minimatch)
 });
 
-// EXTERNAL MODULE: external "node:path"
-var external_node_path_ = __nccwpck_require__(6760);
-// EXTERNAL MODULE: ./lib/config.js
-var lib_config = __nccwpck_require__(9651);
-// EXTERNAL MODULE: ./lib/spdx.js
-var spdx = __nccwpck_require__(982);
-// EXTERNAL MODULE: external "node:fs"
-var external_node_fs_ = __nccwpck_require__(3024);
+// UNUSED EXPORTS: AST, GLOBSTAR, braceExpand, defaults, escape, filter, makeRe, match, sep, unescape
+
 ;// CONCATENATED MODULE: ../../.yarn/berry/cache/balanced-match-npm-4.0.4-fd666b3c7f-10c0.zip/node_modules/balanced-match/dist/esm/index.js
 const balanced = (a, b, str) => {
     const ma = a instanceof RegExp ? maybeMatch(a, str) : a;
@@ -45900,6 +45766,297 @@ minimatch.Minimatch = Minimatch;
 minimatch.escape = escape_escape;
 minimatch.unescape = unescape_unescape;
 //# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ 9651:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
+
+/* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
+/* harmony export */   $: () => (/* binding */ headerRules),
+/* harmony export */   Z: () => (/* binding */ loadConfig)
+/* harmony export */ });
+/* harmony import */ var node_fs__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(3024);
+/* harmony import */ var node_path__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(6760);
+/* harmony import */ var yaml__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(918);
+/*
+ * Copyright 2026 Zaphiro Technologies
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+
+
+function asRecord(value) {
+    return value && typeof value === "object" && !Array.isArray(value)
+        ? value
+        : {};
+}
+function flattenHeader(entry) {
+    if (Array.isArray(entry))
+        return entry;
+    return entry ? [entry] : [];
+}
+function normalizeHeader(value) {
+    if (Array.isArray(value)) {
+        return value.map((entry) => normalizeHeader(entry)).flatMap(flattenHeader);
+    }
+    if (!value || typeof value !== "object")
+        return undefined;
+    const record = asRecord(value);
+    const license = asRecord(record.license);
+    return {
+        path: typeof record.path === "string" ? record.path : undefined,
+        license: {
+            "spdx-id": typeof license["spdx-id"] === "string" ? license["spdx-id"] : undefined,
+            "copyright-owner": typeof license["copyright-owner"] === "string"
+                ? license["copyright-owner"]
+                : undefined,
+            "copyright-year": typeof license["copyright-year"] === "string" ||
+                typeof license["copyright-year"] === "number"
+                ? license["copyright-year"]
+                : undefined,
+            "software-name": typeof license["software-name"] === "string"
+                ? license["software-name"]
+                : undefined,
+            content: typeof license.content === "string" ? license.content : undefined,
+            pattern: typeof license.pattern === "string" ? license.pattern : undefined,
+        },
+        paths: Array.isArray(record.paths)
+            ? record.paths.filter((item) => typeof item === "string")
+            : undefined,
+        "paths-ignore": Array.isArray(record["paths-ignore"])
+            ? record["paths-ignore"].filter((item) => typeof item === "string")
+            : undefined,
+        comment: record.comment === "always" ||
+            record.comment === "never" ||
+            record.comment === "on-failure"
+            ? record.comment
+            : undefined,
+        "license-location-threshold": typeof record["license-location-threshold"] === "number"
+            ? record["license-location-threshold"]
+            : undefined,
+        language: asRecord(record.language),
+    };
+}
+function normalizeExceptions(value) {
+    if (value !== undefined && !Array.isArray(value)) {
+        throw new Error("dependency.exceptions must be a list.");
+    }
+    return Array.isArray(value)
+        ? value.map((item, index) => {
+            const entry = asRecord(item);
+            const name = typeof entry.name === "string" ? entry.name.trim() : "";
+            const version = typeof entry.version === "string" ? entry.version.trim() : "";
+            const url = typeof entry.url === "string" ? entry.url.trim() : "";
+            const reason = typeof entry.reason === "string" ? entry.reason.trim() : "";
+            if (!name || !version || !url || !reason) {
+                throw new Error(`dependency.exceptions[${index}] requires name, version, url, and reason.`);
+            }
+            try {
+                const parsedUrl = new URL(url);
+                if (parsedUrl.protocol !== "https:" &&
+                    parsedUrl.protocol !== "http:") {
+                    throw new Error("unsupported protocol");
+                }
+            }
+            catch {
+                throw new Error(`dependency.exceptions[${index}].url must be an HTTP(S) URL.`);
+            }
+            return { name, version, url, reason };
+        })
+        : [];
+}
+function normalizeLicenseOverrides(value) {
+    if (!Array.isArray(value))
+        return [];
+    return value.flatMap((item, index) => {
+        const entry = asRecord(item);
+        if (typeof entry.name !== "string" || typeof entry.license !== "string")
+            return [];
+        const match = typeof entry.match === "string" ? entry.match : undefined;
+        if (match !== undefined) {
+            try {
+                new RegExp(match);
+            }
+            catch {
+                throw new Error(`dependency.licenses[${index}].match must be a valid regular expression.`);
+            }
+        }
+        return [
+            {
+                name: entry.name,
+                version: typeof entry.version === "string" ? entry.version : undefined,
+                ...(match !== undefined ? { match } : {}),
+                license: entry.license,
+            },
+        ];
+    });
+}
+function normalizeLicenseRules(value) {
+    if (value === undefined)
+        return undefined;
+    if (!Array.isArray(value)) {
+        throw new TypeError("dependency.license-rules must be a list.");
+    }
+    return value.map((item, index) => {
+        const entry = asRecord(item);
+        if (typeof entry.source !== "string" ||
+            !["license-text", "python-classifier"].includes(entry.source) ||
+            typeof entry.match !== "string" ||
+            typeof entry.license !== "string") {
+            throw new Error(`dependency.license-rules[${index}] requires a supported source, match, and license.`);
+        }
+        try {
+            new RegExp(entry.match, "is");
+        }
+        catch {
+            throw new Error(`dependency.license-rules[${index}].match must be a valid regular expression.`);
+        }
+        return {
+            source: entry.source,
+            match: entry.match,
+            license: entry.license,
+        };
+    });
+}
+function normalizeExcludes(value) {
+    if (!Array.isArray(value))
+        return [];
+    return value.flatMap((item) => {
+        const entry = asRecord(item);
+        if (typeof entry.name !== "string")
+            return [];
+        return [
+            {
+                name: entry.name,
+                version: typeof entry.version === "string" ? entry.version : undefined,
+                recursive: entry.recursive === true,
+            },
+        ];
+    });
+}
+function normalizeGoConfig(value) {
+    if (value === undefined)
+        return undefined;
+    if (!value || typeof value !== "object" || Array.isArray(value)) {
+        throw new Error("dependency.go must be a mapping.");
+    }
+    const go = asRecord(value);
+    if (go.packages !== undefined && !Array.isArray(go.packages)) {
+        throw new Error("dependency.go.packages must be a list.");
+    }
+    if (Array.isArray(go.packages) &&
+        go.packages.some((item) => typeof item !== "string" || !item.trim())) {
+        throw new Error("dependency.go.packages must contain non-empty strings.");
+    }
+    if (go["test-packages"] !== undefined) {
+        throw new Error("dependency.go.test-packages is not supported; use dependency.include-dev-dependencies.");
+    }
+    return {
+        packages: Array.isArray(go.packages)
+            ? go.packages
+            : undefined,
+    };
+}
+function normalizeDependencies(value) {
+    if (!value || typeof value !== "object")
+        return undefined;
+    const record = asRecord(value);
+    const exceptions = normalizeExceptions(record.exceptions);
+    const go = normalizeGoConfig(record.go);
+    if (record["include-dev-dependencies"] !== undefined &&
+        typeof record["include-dev-dependencies"] !== "boolean") {
+        throw new Error("dependency.include-dev-dependencies must be a boolean.");
+    }
+    if (record["project-license"] !== undefined &&
+        (typeof record["project-license"] !== "string" ||
+            !["header", "proprietary"].includes(record["project-license"]))) {
+        throw new Error("dependency.project-license must be either header or proprietary.");
+    }
+    const distributionModels = [
+        "internal-use",
+        "proprietary-binary",
+        "public-saas",
+        "open-source-redistribution",
+        "static-linking",
+        "dynamic-linking",
+    ];
+    if (record.distribution !== undefined &&
+        (typeof record.distribution !== "string" ||
+            !distributionModels.includes(record.distribution))) {
+        throw new Error(`dependency.distribution must be one of: ${distributionModels.join(", ")}.`);
+    }
+    return {
+        files: Array.isArray(record.files)
+            ? record.files.filter((item) => typeof item === "string")
+            : [],
+        go,
+        distribution: record.distribution,
+        includeDevDependencies: record["include-dev-dependencies"] === true,
+        projectLicense: record["project-license"] === "proprietary" ? "proprietary" : "header",
+        licenses: normalizeLicenseOverrides(record.licenses),
+        licenseRules: normalizeLicenseRules(record["license-rules"]),
+        threshold: typeof record.threshold === "number" ? record.threshold : undefined,
+        excludes: normalizeExcludes(record.excludes),
+        exceptions,
+        require_fsf_free: record.require_fsf_free === true,
+        require_osi_approved: record.require_osi_approved === true,
+    };
+}
+function loadConfig(root, configPath) {
+    const absolutePath = (0,node_path__WEBPACK_IMPORTED_MODULE_1__.resolve)(root, configPath);
+    if (!(0,node_fs__WEBPACK_IMPORTED_MODULE_0__.existsSync)(absolutePath))
+        throw new Error(`Configuration file not found: ${configPath}`);
+    const source = (0,node_fs__WEBPACK_IMPORTED_MODULE_0__.readFileSync)(absolutePath, "utf8");
+    const parsed = asRecord((0,yaml__WEBPACK_IMPORTED_MODULE_2__/* .parse */ .qg)(source));
+    const config = {
+        header: normalizeHeader(parsed.header),
+        dependency: normalizeDependencies(parsed.dependency),
+    };
+    if (!config.header && !config.dependency) {
+        throw new Error(`Configuration contains neither a header nor dependency section: ${configPath}`);
+    }
+    return { config, path: absolutePath };
+}
+function headerRules(config) {
+    if (!config.header)
+        return [];
+    return Array.isArray(config.header) ? config.header : [config.header];
+}
+//# sourceMappingURL=config.js.map
+
+/***/ }),
+
+/***/ 4433:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
+
+
+// EXPORTS
+__nccwpck_require__.d(__webpack_exports__, {
+  q: () => (/* reexport */ checkDependencies)
+});
+
+// EXTERNAL MODULE: external "node:path"
+var external_node_path_ = __nccwpck_require__(6760);
+// EXTERNAL MODULE: ./lib/config.js
+var lib_config = __nccwpck_require__(9651);
+// EXTERNAL MODULE: ./lib/spdx.js
+var spdx = __nccwpck_require__(982);
+// EXTERNAL MODULE: external "node:fs"
+var external_node_fs_ = __nccwpck_require__(3024);
+// EXTERNAL MODULE: ../../.yarn/berry/cache/minimatch-npm-10.2.6-fd0d1cf467-10c0.zip/node_modules/minimatch/dist/esm/index.js + 7 modules
+var esm = __nccwpck_require__(6270);
 ;// CONCATENATED MODULE: ./lib/util.js
 /*
  * Copyright 2026 Zaphiro Technologies
@@ -45928,8 +46085,8 @@ function matchesPath(path, patterns) {
     const normalized = pathForGlob(path).replace(/^\.\//, "");
     return patterns.some((pattern) => {
         const candidate = pathForGlob(pattern).replace(/^\.\//, "");
-        return (minimatch(normalized, candidate, { dot: true, matchBase: false }) ||
-            minimatch(normalized, `${candidate.replace(/\/$/, "")}/**`, {
+        return ((0,esm/* minimatch */.xF)(normalized, candidate, { dot: true, matchBase: false }) ||
+            (0,esm/* minimatch */.xF)(normalized, `${candidate.replace(/\/$/, "")}/**`, {
                 dot: true,
             }) ||
             normalized === candidate.replace(/\/$/, "") ||
@@ -46265,6 +46422,152 @@ const DEFAULT_RULES = loadDefaultLicenseRules();
 const DEFAULT_LICENSE_TEXT_RULES = DEFAULT_RULES["license-text"];
 const DEFAULT_PYTHON_CLASSIFIER_RULES = DEFAULT_RULES["python-classifier"];
 //# sourceMappingURL=default-license-rules.js.map
+// EXTERNAL MODULE: ./lib/dependencies/metadata/cache/index.js + 1 modules
+var cache = __nccwpck_require__(3775);
+;// CONCATENATED MODULE: ./lib/dependencies/metadata/cache/npm.js
+/*
+ * Copyright 2026 Zaphiro Technologies
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+function isNpmVersionUrl(url) {
+    try {
+        const parsed = new URL(url);
+        const segments = parsed.pathname.split("/").filter(Boolean);
+        return (parsed.protocol === "https:" &&
+            parsed.hostname === "registry.npmjs.org" &&
+            segments.length >= 2 &&
+            /^v?\d+\.\d+\.\d+(?:[-+][0-9A-Za-z.-]+)?$/.test(decodeURIComponent(segments.at(-1) ?? "")));
+    }
+    catch {
+        return false;
+    }
+}
+function npm_isRecord(value) {
+    return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+function validMetadata(value) {
+    if (!npm_isRecord(value))
+        return undefined;
+    const repository = value.repository;
+    const validRepository = typeof repository === "string" ||
+        (npm_isRecord(repository) && typeof repository.url === "string");
+    const licenses = Array.isArray(value.licenses)
+        ? value.licenses.filter((license) => npm_isRecord(license) && typeof license.type === "string")
+        : undefined;
+    return {
+        ...(typeof value.license === "string" || npm_isRecord(value.license)
+            ? { license: value.license }
+            : {}),
+        ...(licenses?.length ? { licenses } : {}),
+        ...(validRepository ? { repository } : {}),
+    };
+}
+function cachedNpmLicenseMetadata(url) {
+    if (!isNpmVersionUrl(url))
+        return undefined;
+    return validMetadata((0,cache/* getCachedMetadata */.iW)(url));
+}
+function rememberNpmLicenseMetadata(url, value) {
+    if (!isNpmVersionUrl(url))
+        return;
+    const selected = validMetadata(value);
+    if (selected && Object.keys(selected).length > 0)
+        (0,cache/* rememberMetadata */.ZB)(url, selected);
+}
+//# sourceMappingURL=npm.js.map
+;// CONCATENATED MODULE: ./lib/dependencies/metadata/cache/python.js
+/*
+ * Copyright 2026 Zaphiro Technologies
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+function isPythonReleaseUrl(url) {
+    try {
+        const parsed = new URL(url);
+        const segments = parsed.pathname.split("/").filter(Boolean);
+        return (parsed.protocol === "https:" &&
+            parsed.hostname === "pypi.org" &&
+            segments.length === 4 &&
+            segments[0] === "pypi" &&
+            segments[1] !== "" &&
+            segments[2] !== "" &&
+            segments[3] === "json");
+    }
+    catch {
+        return false;
+    }
+}
+function python_isRecord(value) {
+    return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+function isProjectUrl(entry) {
+    return typeof entry[1] === "string" || entry[1] === null;
+}
+function validPythonMetadata(value) {
+    if (!python_isRecord(value) || !python_isRecord(value.info))
+        return undefined;
+    const source = value.info;
+    const projectUrls = python_isRecord(source.project_urls)
+        ? Object.fromEntries(Object.entries(source.project_urls).filter(isProjectUrl))
+        : undefined;
+    const info = {
+        ...(typeof source.license === "string" || source.license === null
+            ? { license: source.license }
+            : {}),
+        ...(typeof source.license_expression === "string" ||
+            source.license_expression === null
+            ? { license_expression: source.license_expression }
+            : {}),
+        ...(Array.isArray(source.classifiers) &&
+            source.classifiers.every((item) => typeof item === "string")
+            ? { classifiers: source.classifiers }
+            : {}),
+        ...(typeof source.version === "string" ? { version: source.version } : {}),
+        ...(typeof source.home_page === "string" || source.home_page === null
+            ? { home_page: source.home_page }
+            : {}),
+        ...(projectUrls ? { project_urls: projectUrls } : {}),
+    };
+    if (Object.keys(info).length === 0)
+        return undefined;
+    return { info };
+}
+function cachedPythonLicenseMetadata(url) {
+    return isPythonReleaseUrl(url)
+        ? validPythonMetadata((0,cache/* getCachedMetadata */.iW)(url))
+        : undefined;
+}
+function rememberPythonLicenseMetadata(url, value) {
+    if (!isPythonReleaseUrl(url))
+        return;
+    const selected = validPythonMetadata(value);
+    if (selected)
+        (0,cache/* rememberMetadata */.ZB)(url, selected);
+}
+//# sourceMappingURL=python.js.map
 ;// CONCATENATED MODULE: ./lib/dependencies/sources/metadata.js
 /*
  * Copyright 2026 Zaphiro Technologies
@@ -46282,8 +46585,55 @@ const DEFAULT_PYTHON_CLASSIFIER_RULES = DEFAULT_RULES["python-classifier"];
  * limitations under the License.
  */
 
+
+
 const jsonCache = new Map();
 const textCache = new Map();
+const MAX_FETCH_ATTEMPTS = 3;
+const MAX_RETRY_AFTER_MS = 30_000;
+const RETRYABLE_STATUS_CODES = new Set([408, 425, 429, 500, 502, 503, 504]);
+function retryDelay(response, attempt) {
+    const retryAfter = response?.headers.get("retry-after");
+    if (retryAfter) {
+        const seconds = Number(retryAfter);
+        const retryAt = Number.isFinite(seconds)
+            ? Date.now() + seconds * 1000
+            : Date.parse(retryAfter);
+        if (Number.isFinite(retryAt)) {
+            return Math.max(0, Math.min(MAX_RETRY_AFTER_MS, retryAt - Date.now()));
+        }
+    }
+    return Math.min(2000, 250 * 2 ** attempt);
+}
+async function fetchWithRetry(url, init, attempt = 0) {
+    let response;
+    try {
+        response = await fetch(url, {
+            ...init,
+            signal: AbortSignal.timeout(8000),
+        });
+    }
+    catch {
+        if (attempt >= MAX_FETCH_ATTEMPTS - 1)
+            return undefined;
+        await new Promise((resolve) => setTimeout(resolve, retryDelay(undefined, attempt)));
+        return fetchWithRetry(url, init, attempt + 1);
+    }
+    if (response.ok)
+        return response;
+    if (!RETRYABLE_STATUS_CODES.has(response.status))
+        return undefined;
+    try {
+        await response.body?.cancel();
+    }
+    catch {
+        // The response body may already be closed.
+    }
+    if (attempt >= MAX_FETCH_ATTEMPTS - 1)
+        return undefined;
+    await new Promise((resolve) => setTimeout(resolve, retryDelay(response, attempt)));
+    return fetchWithRetry(url, init, attempt + 1);
+}
 const LICENSE_FILENAMES = [
     "LICENSE",
     "LICENCE",
@@ -46298,40 +46648,57 @@ async function fetchJson(url, token) {
     const cached = jsonCache.get(cacheKey);
     if (cached)
         return cached;
+    const persistentCache = !token
+        ? (cachedNpmLicenseMetadata(url) ?? cachedPythonLicenseMetadata(url))
+        : undefined;
+    if (persistentCache)
+        return persistentCache;
     const request = (async () => {
+        const response = await fetchWithRetry(url, {
+            headers: token
+                ? { authorization: `Bearer ${token}`, accept: "application/json" }
+                : { accept: "application/json" },
+        });
+        if (!response)
+            return undefined;
         try {
-            const response = await fetch(url, {
-                headers: token
-                    ? { authorization: `Bearer ${token}`, accept: "application/json" }
-                    : { accept: "application/json" },
-                signal: AbortSignal.timeout(8000),
-            });
-            if (!response.ok)
-                return undefined;
-            return (await response.json());
+            const json = (await response.json());
+            if (!token) {
+                rememberNpmLicenseMetadata(url, json);
+                rememberPythonLicenseMetadata(url, json);
+            }
+            return json;
         }
         catch {
             return undefined;
         }
     })();
     jsonCache.set(cacheKey, request);
-    return request;
+    const result = await request;
+    if (result === undefined && jsonCache.get(cacheKey) === request)
+        jsonCache.delete(cacheKey);
+    return result;
 }
 async function fetchText(url) {
     const cached = textCache.get(url);
     if (cached)
         return cached;
     const request = (async () => {
+        const response = await fetchWithRetry(url);
+        if (!response)
+            return undefined;
         try {
-            const response = await fetch(url, { signal: AbortSignal.timeout(8000) });
-            return response.ok ? response.text() : undefined;
+            return await response.text();
         }
         catch {
             return undefined;
         }
     })();
     textCache.set(url, request);
-    return request;
+    const result = await request;
+    if (result === undefined && textCache.get(url) === request)
+        textCache.delete(url);
+    return result;
 }
 function identifyLicenseText(text, customRules = []) {
     const applicableRules = customRules.filter((rule) => rule.source === "license-text");
@@ -46797,7 +47164,7 @@ function resolveYarnEntry(entries, descriptor, parentName, resolutions) {
         ? `${parentName}/${descriptor.name}`
         : descriptor.name;
     const resolution = Object.entries(resolutions).find(([pattern]) => pattern === descriptor.name ||
-        minimatch(dependencyPath, pattern, { dot: true }));
+        (0,esm/* minimatch */.xF)(dependencyPath, pattern, { dot: true }));
     if (!resolution)
         return findYarnEntry(entries, descriptor);
     return findYarnEntry(entries, {
@@ -48073,7 +48440,7 @@ function versionMatches(configured, version) {
             .includes(version));
 }
 function nameMatches(name, pattern) {
-    return name === pattern || minimatch(name, pattern);
+    return name === pattern || (0,esm/* minimatch */.xF)(name, pattern);
 }
 function overrideFor(config, name, version) {
     for (const override of config.licenses ?? []) {
@@ -48346,16 +48713,29 @@ async function checkDependencies(root, config, token, weakCompatible, logger, go
 
 /***/ }),
 
-/***/ 4145:
-/***/ ((__webpack_module__, __unused_webpack___webpack_exports__, __nccwpck_require__) => {
+/***/ 3775:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
 
-__nccwpck_require__.a(__webpack_module__, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
-/* harmony import */ var _actions_core__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(7687);
-/* harmony import */ var _config_js__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(9651);
-/* harmony import */ var _dependencies_js__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(3590);
-/* harmony import */ var _logger_js__WEBPACK_IMPORTED_MODULE_3__ = __nccwpck_require__(3953);
-/* harmony import */ var _spdx_js__WEBPACK_IMPORTED_MODULE_4__ = __nccwpck_require__(982);
-/* harmony import */ var _report_js__WEBPACK_IMPORTED_MODULE_5__ = __nccwpck_require__(431);
+
+// EXPORTS
+__nccwpck_require__.d(__webpack_exports__, {
+  iW: () => (/* binding */ getCachedMetadata),
+  ZB: () => (/* binding */ rememberMetadata),
+  qx: () => (/* binding */ restoreMetadataCache),
+  hO: () => (/* binding */ saveMetadataCache)
+});
+
+// EXTERNAL MODULE: ../../.yarn/berry/cache/@actions-core-npm-1.11.1-ad090a2026-10c0.zip/node_modules/@actions/core/lib/core.js
+var core = __nccwpck_require__(7687);
+// EXTERNAL MODULE: external "node:crypto"
+var external_node_crypto_ = __nccwpck_require__(7598);
+;// CONCATENATED MODULE: external "node:fs/promises"
+const promises_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:fs/promises");
+// EXTERNAL MODULE: external "node:os"
+var external_node_os_ = __nccwpck_require__(8161);
+// EXTERNAL MODULE: external "node:path"
+var external_node_path_ = __nccwpck_require__(6760);
+;// CONCATENATED MODULE: ./lib/dependencies/metadata/cache/index.js
 /*
  * Copyright 2026 Zaphiro Technologies
  *
@@ -48371,6 +48751,129 @@ __nccwpck_require__.a(__webpack_module__, async (__webpack_handle_async_dependen
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+
+
+
+
+const CACHE_PREFIX = "license-checker-metadata-v1";
+const CACHE_FILE = (0,external_node_path_.join)((0,external_node_os_.tmpdir)(), "license-checker", "dependency-metadata.json");
+const ALLOWED_HOSTS = new Set(["registry.npmjs.org", "pypi.org"]);
+const metadata = new Map();
+let dependencyHash;
+let restoredKey;
+let enabled = false;
+function cacheKey(contentHash) {
+    return `${CACHE_PREFIX}-${dependencyHash}-${contentHash}`;
+}
+function isCacheableUrl(url) {
+    try {
+        const parsed = new URL(url);
+        return (parsed.protocol === "https:" &&
+            ALLOWED_HOSTS.has(parsed.hostname) &&
+            parsed.username === "" &&
+            parsed.password === "");
+    }
+    catch {
+        return false;
+    }
+}
+function getCachedMetadata(url) {
+    return isCacheableUrl(url) ? metadata.get(url) : undefined;
+}
+function rememberMetadata(url, value) {
+    if (isCacheableUrl(url))
+        metadata.set(url, value);
+}
+async function restoreMetadataCache(root, dependencyFiles) {
+    if (process.env.GITHUB_ACTIONS !== "true" ||
+        !process.env.ACTIONS_RUNTIME_TOKEN ||
+        (!process.env.ACTIONS_CACHE_URL && !process.env.ACTIONS_RUNTIME_URL))
+        return;
+    enabled = true;
+    const hash = (0,external_node_crypto_.createHash)("sha256");
+    const paths = [...dependencyFiles].sort((a, b) => a.localeCompare(b, "en"));
+    const fileContents = await Promise.all(paths.map((path) => (0,promises_namespaceObject.readFile)((0,external_node_path_.join)(root, path)).catch(() => "<missing>")));
+    paths.forEach((path, index) => {
+        hash.update(path);
+        hash.update("\0");
+        hash.update(fileContents[index] ?? "<missing>");
+        hash.update("\0");
+    });
+    dependencyHash = hash.digest("hex").slice(0, 16);
+    try {
+        const cache = await __nccwpck_require__.e(/* import() */ 260).then(__nccwpck_require__.bind(__nccwpck_require__, 7260));
+        const restored = await cache.restoreCache([CACHE_FILE], cacheKey("seed"), [
+            `${CACHE_PREFIX}-${dependencyHash}-`,
+            `${CACHE_PREFIX}-`,
+        ]);
+        restoredKey = restored;
+        if (!restored)
+            return;
+        const parsed = JSON.parse(await (0,promises_namespaceObject.readFile)(CACHE_FILE, "utf8"));
+        if (typeof parsed !== "object" || parsed === null || Array.isArray(parsed))
+            return;
+        for (const [url, value] of Object.entries(parsed))
+            rememberMetadata(url, value);
+        core.info(`Restored ${metadata.size} dependency metadata entries from cache.`);
+    }
+    catch (error) {
+        core.warning(`Could not restore dependency metadata cache: ${error instanceof Error ? error.message : String(error)}`);
+    }
+}
+async function saveMetadataCache() {
+    if (!enabled || !dependencyHash || metadata.size === 0)
+        return;
+    try {
+        const cache = await __nccwpck_require__.e(/* import() */ 260).then(__nccwpck_require__.bind(__nccwpck_require__, 7260));
+        await (0,promises_namespaceObject.mkdir)((0,external_node_path_.join)((0,external_node_os_.tmpdir)(), "license-checker"), { recursive: true });
+        const serialized = JSON.stringify(Object.fromEntries(metadata), null, 2);
+        await (0,promises_namespaceObject.writeFile)(CACHE_FILE, serialized);
+        const contentHash = (0,external_node_crypto_.createHash)("sha256")
+            .update(serialized)
+            .digest("hex")
+            .slice(0, 16);
+        const key = cacheKey(contentHash);
+        if (key === restoredKey)
+            return;
+        await cache.saveCache([CACHE_FILE], key);
+        core.info(`Saved ${metadata.size} dependency metadata entries to cache.`);
+    }
+    catch (error) {
+        core.warning(`Could not save dependency metadata cache: ${error instanceof Error ? error.message : String(error)}`);
+    }
+}
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ 4145:
+/***/ ((__webpack_module__, __unused_webpack___webpack_exports__, __nccwpck_require__) => {
+
+__nccwpck_require__.a(__webpack_module__, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+/* harmony import */ var _actions_core__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(7687);
+/* harmony import */ var _config_js__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(9651);
+/* harmony import */ var _dependencies_js__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(4433);
+/* harmony import */ var _logger_js__WEBPACK_IMPORTED_MODULE_3__ = __nccwpck_require__(3953);
+/* harmony import */ var _spdx_js__WEBPACK_IMPORTED_MODULE_4__ = __nccwpck_require__(982);
+/* harmony import */ var _dependencies_metadata_cache_index_js__WEBPACK_IMPORTED_MODULE_5__ = __nccwpck_require__(3775);
+/* harmony import */ var _report_js__WEBPACK_IMPORTED_MODULE_6__ = __nccwpck_require__(431);
+/*
+ * Copyright 2026 Zaphiro Technologies
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 
 
 
@@ -48406,6 +48909,7 @@ async function run() {
     const reportAll = reportAllInput.toLowerCase() === "true";
     logger.info(`Loading configuration from ${configInput}`);
     const { config } = (0,_config_js__WEBPACK_IMPORTED_MODULE_1__/* .loadConfig */ .Z)(root, configInput);
+    await (0,_dependencies_metadata_cache_index_js__WEBPACK_IMPORTED_MODULE_5__/* .restoreMetadataCache */ .qx)(root, config.dependency?.files ?? []);
     const distributionInput = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput("distribution") ||
         argumentValue("--distribution") ||
         config.dependency?.distribution ||
@@ -48414,15 +48918,16 @@ async function run() {
         throw new Error("Invalid distribution. Use internal-use, proprietary-binary, public-saas, open-source-redistribution, static-linking, or dynamic-linking.");
     }
     const dependency = await (0,_dependencies_js__WEBPACK_IMPORTED_MODULE_2__/* .checkDependencies */ .q)(root, config, token, weakCompatible, logger, undefined, distributionInput);
+    await (0,_dependencies_metadata_cache_index_js__WEBPACK_IMPORTED_MODULE_5__/* .saveMetadataCache */ .hO)();
     const report = {
         dependency,
         failed: dependency.failures.length > 0,
     };
-    (0,_report_js__WEBPACK_IMPORTED_MODULE_5__/* .annotate */ .fz)(report);
-    await (0,_report_js__WEBPACK_IMPORTED_MODULE_5__/* .writeSummary */ .Sy)(report, reportAll ? "all" : "issues");
-    if ((report.failed || (0,_report_js__WEBPACK_IMPORTED_MODULE_5__/* .distributionWarnings */ .CZ)(report).length > 0) &&
+    (0,_report_js__WEBPACK_IMPORTED_MODULE_6__/* .annotate */ .fz)(report);
+    await (0,_report_js__WEBPACK_IMPORTED_MODULE_6__/* .writeSummary */ .Sy)(report, reportAll ? "all" : "issues");
+    if ((report.failed || (0,_report_js__WEBPACK_IMPORTED_MODULE_6__/* .distributionWarnings */ .CZ)(report).length > 0) &&
         commentsEnabled(config))
-        await (0,_report_js__WEBPACK_IMPORTED_MODULE_5__/* .commentOnPullRequest */ .rh)(token, report);
+        await (0,_report_js__WEBPACK_IMPORTED_MODULE_6__/* .commentOnPullRequest */ .rh)(token, report);
     logger.info(`Checked ${dependency.checked} dependencies.`);
     if (report.failed) {
         throw new Error(`License check failed: ${dependency.failures.length} dependency failure(s).`);
@@ -49226,6 +49731,9 @@ module.exports = /*#__PURE__*/JSON.parse('["0BSD","3D-Slicer-1.0","AAL","ADSL","
 /******/ 	return module.exports;
 /******/ }
 /******/ 
+/******/ // expose the modules object (__webpack_modules__)
+/******/ __nccwpck_require__.m = __webpack_modules__;
+/******/ 
 /************************************************************************/
 /******/ /* webpack/runtime/async module */
 /******/ (() => {
@@ -49296,6 +49804,36 @@ module.exports = /*#__PURE__*/JSON.parse('["0BSD","3D-Slicer-1.0","AAL","ADSL","
 /******/ 	};
 /******/ })();
 /******/ 
+/******/ /* webpack/runtime/create fake namespace object */
+/******/ (() => {
+/******/ 	var getProto = Object.getPrototypeOf ? (obj) => (Object.getPrototypeOf(obj)) : (obj) => (obj.__proto__);
+/******/ 	var leafPrototypes;
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 16: return value when it's Promise-like
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__nccwpck_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = this(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if(typeof value === 'object' && value) {
+/******/ 			if((mode & 4) && value.__esModule) return value;
+/******/ 			if((mode & 16) && typeof value.then === 'function') return value;
+/******/ 		}
+/******/ 		var ns = Object.create(null);
+/******/ 		__nccwpck_require__.r(ns);
+/******/ 		var def = {};
+/******/ 		leafPrototypes = leafPrototypes || [null, getProto({}), getProto([]), getProto(getProto)];
+/******/ 		for(var current = mode & 2 && value; typeof current == 'object' && !~leafPrototypes.indexOf(current); current = getProto(current)) {
+/******/ 			Object.getOwnPropertyNames(current).forEach((key) => (def[key] = () => (value[key])));
+/******/ 		}
+/******/ 		def['default'] = () => (value);
+/******/ 		__nccwpck_require__.d(ns, def);
+/******/ 		return ns;
+/******/ 	};
+/******/ })();
+/******/ 
 /******/ /* webpack/runtime/define property getters */
 /******/ (() => {
 /******/ 	// define getter functions for harmony exports
@@ -49308,14 +49846,110 @@ module.exports = /*#__PURE__*/JSON.parse('["0BSD","3D-Slicer-1.0","AAL","ADSL","
 /******/ 	};
 /******/ })();
 /******/ 
+/******/ /* webpack/runtime/ensure chunk */
+/******/ (() => {
+/******/ 	__nccwpck_require__.f = {};
+/******/ 	// This file contains only the entry chunk.
+/******/ 	// The chunk loading function for additional chunks
+/******/ 	__nccwpck_require__.e = (chunkId) => {
+/******/ 		return Promise.all(Object.keys(__nccwpck_require__.f).reduce((promises, key) => {
+/******/ 			__nccwpck_require__.f[key](chunkId, promises);
+/******/ 			return promises;
+/******/ 		}, []));
+/******/ 	};
+/******/ })();
+/******/ 
+/******/ /* webpack/runtime/get javascript chunk filename */
+/******/ (() => {
+/******/ 	// This function allow to reference async chunks
+/******/ 	__nccwpck_require__.u = (chunkId) => {
+/******/ 		// return url for filenames based on template
+/******/ 		return "" + chunkId + ".index.js";
+/******/ 	};
+/******/ })();
+/******/ 
 /******/ /* webpack/runtime/hasOwnProperty shorthand */
 /******/ (() => {
 /******/ 	__nccwpck_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ })();
 /******/ 
+/******/ /* webpack/runtime/make namespace object */
+/******/ (() => {
+/******/ 	// define __esModule on exports
+/******/ 	__nccwpck_require__.r = (exports) => {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/ })();
+/******/ 
 /******/ /* webpack/runtime/compat */
 /******/ 
 /******/ if (typeof __nccwpck_require__ !== 'undefined') __nccwpck_require__.ab = new URL('.', import.meta.url).pathname.slice(import.meta.url.match(/^file:\/\/\/\w:/) ? 1 : 0, -1) + "/";
+/******/ 
+/******/ /* webpack/runtime/import chunk loading */
+/******/ (() => {
+/******/ 	// no baseURI
+/******/ 	
+/******/ 	// object to store loaded and loading chunks
+/******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 	// [resolve, Promise] = chunk loading, 0 = chunk loaded
+/******/ 	var installedChunks = {
+/******/ 		792: 0
+/******/ 	};
+/******/ 	
+/******/ 	var installChunk = (data) => {
+/******/ 		var {ids, modules, runtime} = data;
+/******/ 		// add "modules" to the modules object,
+/******/ 		// then flag all "ids" as loaded and fire callback
+/******/ 		var moduleId, chunkId, i = 0;
+/******/ 		for(moduleId in modules) {
+/******/ 			if(__nccwpck_require__.o(modules, moduleId)) {
+/******/ 				__nccwpck_require__.m[moduleId] = modules[moduleId];
+/******/ 			}
+/******/ 		}
+/******/ 		if(runtime) runtime(__nccwpck_require__);
+/******/ 		for(;i < ids.length; i++) {
+/******/ 			chunkId = ids[i];
+/******/ 			if(__nccwpck_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
+/******/ 				installedChunks[chunkId][0]();
+/******/ 			}
+/******/ 			installedChunks[ids[i]] = 0;
+/******/ 		}
+/******/ 	
+/******/ 	}
+/******/ 	
+/******/ 	__nccwpck_require__.f.j = (chunkId, promises) => {
+/******/ 			// import() chunk loading for javascript
+/******/ 			var installedChunkData = __nccwpck_require__.o(installedChunks, chunkId) ? installedChunks[chunkId] : undefined;
+/******/ 			if(installedChunkData !== 0) { // 0 means "already installed".
+/******/ 	
+/******/ 				// a Promise means "currently loading".
+/******/ 				if(installedChunkData) {
+/******/ 					promises.push(installedChunkData[1]);
+/******/ 				} else {
+/******/ 					if(true) { // all chunks have JS
+/******/ 						// setup Promise in chunk cache
+/******/ 						var promise = import("./" + __nccwpck_require__.u(chunkId)).then(installChunk, (e) => {
+/******/ 							if(installedChunks[chunkId] !== 0) installedChunks[chunkId] = undefined;
+/******/ 							throw e;
+/******/ 						});
+/******/ 						var promise = Promise.race([promise, new Promise((resolve) => (installedChunkData = installedChunks[chunkId] = [resolve]))])
+/******/ 						promises.push(installedChunkData[1] = promise);
+/******/ 					}
+/******/ 				}
+/******/ 			}
+/******/ 	};
+/******/ 	
+/******/ 	// no prefetching
+/******/ 	
+/******/ 	// no preloaded
+/******/ 	
+/******/ 	// no external install chunk
+/******/ 	
+/******/ 	// no on chunks loaded
+/******/ })();
 /******/ 
 /************************************************************************/
 /******/ 
