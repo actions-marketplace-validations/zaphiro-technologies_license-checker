@@ -1,6 +1,10 @@
 # license-checker Release Notes
 
-## 1.0.2-dev - 2026-11-02
+## 1.0.3-dev - 2026-11-02
+
+- no changes
+
+## 1.0.2 - 2026-11-02
 
 ### Dependencies
 
